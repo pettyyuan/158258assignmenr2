@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<header class="menu">
+    <ul>
+        <li><b>Food Tour in China </b></li>
+        <li><a class="active" href="~/Home/Index">Home</a></li>
+        <li><a href="~/Home/Eight_cuisine">Eight major Chinese cuisines</a></li>
+        <li><a href="~/Home/local_special_dishes">Local specialty dishes</a></li>
+        <li><a href="~/local_dishes/Index">Details</a></li>
+        <li><a href="~/Cuisines/Index">Cuisines</a></li>
+    </ul>
+    
+</header>
+<section>
+    <nav class="navigation">
+        <ul>
+            <li><a href="~/Home/Index">Home</a></li>
+            <div class="groupID">
+            <li><a href="javascript:;" data-tab="Foodculture">Chinese Food culture</a></li>
+            <li><a href="javascript:;" data-tab="Productionprocess">Production process</a></li>
+            </div>
+            <li><a href="~/Home/Eight_cuisine">Eight major Chinese cuisines</a></li>
+
+            <li><a href="~/Home/local_special_dishes">Local specialty dishes</a></li>
+            <li><a href="~/local_dishes/Index">Details</a></li>
+            <li><a href="~/Cuisines/Index">Cuisines</a></li>
+        </ul>
+
+    </nav>
+
+    <article>
+        <div class="first">
+            <img src="~/Content/images/homepage.png">
+            <div style="position:absolute;
+            z-index:5; left:450px; top:350px;
+            color:white;font-size: 100px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Chinese food tour</div>
+        </div>
+        <div class="Foodculture" data-tab="Foodculture">
+            <h1>Diversity of the food culture</h1>
+            <p>
+                China is an ancient civilization with a long history, and it has had a unique
+                food culture since ancient times. In ancient times, people formed different
+                eating habits and cuisines according to different geographical environments,
+                climatic conditions and cultural backgrounds.
+            </p>
+            <p>
+                There are many schools of Chinese cuisine, among which the most
+                influential and representative ones recognized by the society are:
+            </p>
+            <p> <strong><em>Lu, Sichuan, Guangdong, Fujian, Jiangsu, Zhejiang, Anhui and Hunan</em></strong>,</p>
+            <p> which is often referred to as the eight major Chinese cuisines.</p>
+
+            <img src="~/Content/images/图片2.png">
+        </div>
+        <div class="Productionprocess" data-tab="Productionprocess">
+            <h1>Production process </h1>
+            <p>
+                The cooking technology of ancient China is very unique, among which the most representative
+                should be the mastery of heat and cooking techniques. In ancient times, the heat was a very
+                important link. Cooking, frying, steaming, baking and other cooking methods
+                are widely used. In the production, different dishes need different heat and cooking methods.
+            </p>
+            <img src="~/Content/images/图片6.png">
+        </div>
+        <h2><em>Next comes a video introduction about Chinese food</em></h2>
+        <video controls>
+            <source src="~/Content/video.mp4" type="video/mp4">
+        </video>
+        <div class="contact">
+            <p>You are free to explore the food tour , if you have any advice or doubts,</p>
+            <p>please contact us at:</p>
+            <p><em>emile:<a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a></em></p>
+            <p><em>telephone:<a href="tel:(304) 555-7120">(304) 555-7120</a></em></p>
+        </div>
+    </article>
+
+
+</section>
+
+<footer>
+    welcome to my food tour &nbsp;&nbsp;&nbsp;&nbsp;contact :&nbsp;
+    <a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a>
+</footer>
+<script type="text/javascript">
+    document.querySelectorAll('a').forEach(function(el){
+         el.addEventListener('click', function(){
+             var dHeight = document.documentElement.clientHeight;
+             var target = document.querySelector('div[data-tab=' + this.getAttribute('data-tab')+ ']' )
+             target.height = (dHeight - 70) + "px";
+             target.scrollIntoView({behavior:"smooth"});
+         })
+     })
+</script>

@@ -1,0 +1,241 @@
+@charset "utf-8";
+@font-face {
+    font-family:'CAC_champagne' ;
+    src: url('cac_champagne.ttf');
+ }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    background-color: white;
+}
+
+/* Style the header */
+
+img {
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+/* Container for flexboxes */
+section {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 2px;
+    padding: 3px;
+    overflow: hidden;
+    background-color: #333;
+    margin-top:0px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.menu li {
+    float:left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+}
+
+
+.menu li b {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: CAC_champagne;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.menu a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color:#4caf50;
+}
+
+/* Style the navigation menu */
+
+    /* Style the list inside the menu */
+    .navigation>ul {
+        list-style-type: none;
+        margin-top: 60px;
+        margin-left: 0;
+        padding: 0;
+        width:15% ;
+        background-color:white;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .navigation li a {
+        display: block;
+        color: green;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        padding-left:8% ;
+        font-weight:700;
+        text-decoration: none;
+    }
+    .navigation .groupID li a {
+        display: block;
+        color: green;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left:15% ;
+        font-weight:500;
+        text-decoration: none;
+    }
+
+        .navigation li a.active {
+            background-color: #46FEF6;
+            color: black;
+        }
+
+        .navigation li a:hover:not(.active) {
+            background-color: #669CFC;
+            color: white;
+        }
+        .navigation li b.active {
+            background-color: #46FEF6;
+            color: black;
+        }
+
+        .navigation li b:hover:not(.active) {
+            background-color: #669CFC;
+            color: white;
+        }
+
+/* Style the content */
+article {
+    display: block;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    margin-top:0px;
+    margin-left: 15%;
+    background-color:gainsboro;
+}
+.first {
+    padding-top: 48px;
+}
+.Foodculture{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+}
+.Foodculture>h1{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top:60px ;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+}
+.Foodculture>p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.Foodculture img{
+    border-radius: 30px;
+}
+.Productionprocess{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+}
+.Productionprocess>h1{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top:60px ;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top:40px ;
+    margin-bottom: 10px;
+    margin-left:5% ;
+    font-size: 25px;
+    color:green;
+}
+.Productionprocess p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.Productionprocess img{
+    border-radius: 30px;
+}
+video{
+    display: inline-block;
+    border-radius: 30px;
+    margin-left: 0;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+.contact {
+    margin-top: 20px;
+    padding: 40px;
+    background-color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 2em;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 30px;
+    border-style:dashed;
+    border-color: aquamarine ;
+}
+article div p a{
+    text-decoration: none;
+    overflow: hidden;
+    color:green;
+}
+article div p a:hover{
+    color:yellow;
+}
+footer{
+    margin-left: 15%;
+    text-align: center;
+    color:white;
+    background-color: black;
+}
+footer>a{
+
+    text-decoration: none;
+    overflow: hidden;
+    color:green;
+}
+footer>a:hover{
+   
+    color:yellow;
+}

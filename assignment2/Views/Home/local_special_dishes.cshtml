@@ -1,0 +1,161 @@
+﻿@{
+    ViewBag.Title = "Local specialty";
+    Layout = "~/Views/Shared/_LayoutPage3.cshtml";
+}
+<header class="menu">
+    <ul>
+        <li><b>Food Tour in China </b></li>
+        <li><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Home/Eight_cuisine">Eight major Chinese cuisines</a></li>
+        <li><a class="active" href="~/Home/local_special_dishes">Local specialty dishes</a></li>
+        <li><a href="~/local_dishes/Index">Details</a></li>
+        <li><a href="~/Cuisines/Index">Cuisines</a></li>
+    </ul>
+</header>
+<section>
+    <nav class="navigation">
+        <ul>
+            <li><a href="~/Home/Index">Home</a></li>
+            <li><a href="~/Home/Eight_cuisine">Eight major Chinese cuisines</a></li>
+            <li><a href="~/Home/local_special_dishes">Local specialty dishes</a></li>
+            <div class="groupID">
+            <li><a href="javascript:;" data-tab="GoastDuck">Goast Duck</a></li>
+            <li><a href="javascript:;" data-tab="SourandSpicyNoodles">Sour and Spicy Noodles</a></li>
+            <li><a href="javascript:;" data-tab="HotDryNoddles">Hot Dry Noddles</a></li>
+            <li><a href="javascript:;" data-tab="PancakeFruit">Pancake Fruit</a></li>
+            <li><a href="javascript:;" data-tab="Hotpot">Hotpot</a></li>
+            </div>
+            <li><a href="~/local_dishes/Index">Details</a></li>
+            <li><a href="~/Cuisines/Index">Cuisines</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <div class="first">
+            <img src="~/Content/images/local_dishes.png">
+            <div style="position:absolute;width: 30%;
+                z-index:5; left:300px; top:200px;
+                color:black;font-size: 100px;
+                font-family:Cambria, Cochin, Georgia, Times,
+                'Times New Roman', serif">Local specialty dishes</div>
+        </div>
+        <div class="BeijingDuck" data-tab="GoastDuck">
+            <img src="~/Content/images/BeijingDuck1.png" alt="BeijingDuck">
+            <div class="text">
+                <h1>Beijing Roast duck</h1>
+                <p>
+                    Roast duck is made from high-quality meat duck, which
+                    is roasted over charcoal fire with fruit trees. It
+                    is charred on the outside and tender on the inside,
+                    fat but not greasy.
+                </p>
+                <p>
+                    Roast duck in Beijing has
+                    excellent color, aroma, and flavor. It must be
+                    paired with pancakes and served with dipping
+                    ingredients. Cut shredded scallions, cucumbers,
+                    and duck meat into thin slices and take a sip.
+                    It's truly delicious
+                </p>
+            </div>
+            <img src="~/Content/images/BeijingDuck.png" alt="BeijingDuck">
+        </div>
+        <div class="ChongqingSuanlafen" data-tab="SourandSpicyNoodles">
+            <div class="text">
+                <h1>Chongqing Sour and Spicy Noodles</h1>
+                <p>
+                    Chongqing sour and spicy noodles are a traditional local snack in Chongqing,
+                    and have always been one of the favorites of Chongqing people. Chongqing Sour
+                    and Spicy Noodles are handmade from sweet potato and pea starch as the main ingredients,
+                    with a unique taste and an appetizing acidity.
+                </p>
+                <p>
+                    Sour and Spicy Vermicelli Noodles
+                    have a strong and chewy texture, paired with a layer of red chili oil, plenty of coriander,
+                    crispy soybeans and peanuts, and a sour and spicy soup base. The taste is spicy and refreshing,
+                    with a strong and appetizing aroma. It is spicy, fresh, fragrant, sour, and not greasy
+                </p>
+            </div>
+            <img src="~/Content/images/Suanlafen.png" alt="Suanlafen">
+        </div>
+        <div class="WuhanReganmian" data-tab="HotDryNoddles">
+            <img src="~/Content/images/Reganmian1.png" alt="Reganmian">
+            <div class="text">
+                <h1>Wuhan Hot dry noodles</h1>
+                <p>
+                    Hot dry noodles are the representative snacks in Wuhan.
+                    Hot dry noodles in Wuhan is a traditional snack originating
+                    from Wuhan, Hubei Province, China, and is known as one of the
+                    "Top Ten Noodles in China". It is loved by people for its strong
+                    noodles, strong sauce flavor, and bright color.
+                </p>
+                <p>
+                    A typical food in Wuhan, Hot dry noodles are not only food to fill the stomach,
+                    but also a unique cultural experience.
+                </p>
+            </div>
+            <img src="~/Content/images/Reganmian.png" alt="Reganmian">
+        </div>
+        <div class="Jianbingguozi" data-tab="PancakeFruit">
+            <div class="text">
+                <h1>Tianjin Pancake Fruit</h1>
+                <p>
+                    Pancake fruit has a long history and is one of the favorite
+                    breakfast options among Tianjin people. It represents tradition, delicacy, and traditional
+                    culture,and is also an important component of Tianjin's culinary culture
+                </p>
+                <p>
+                    Fruit is deep-fried dough sticks; The pancake looks like lotus leaves and is as
+                    thin as paper. It is made of green soybean milk, eggs and sesame oil. The pancake is
+                    rolled on the hot pan with deep-fried dough sticks, and then added with various small
+                    ingredients such as sauce, Fermented bean curd, scallions, shrimp, etc. The aroma is
+                    fragrant,delicious and palatable, and it is not greasy when eaten
+                </p>
+            </div>
+            <img src="~/Content/images/Jianbingguozi.png" alt="Jianbingguozi">
+        </div>
+        <div class="ChongqingHuoguo" data-tab="Hotpot">
+            <img src="~/Content/images/Huoguo.png" alt="Lu">
+            <div class="text">
+                <h1>Chongqing hotpot</h1>
+
+                <p>
+                    Chongqing hotpot, also known as Maodu hotpot or spicy hotpot, is one of the traditional
+                    Chinese dietary methods; With "spicy, spicy, salty, fresh, fragrant, and crispy" as its
+                    taste, it has the characteristics of diverse dishes, unique seasoning, and bold eating
+                    methods
+                </p>
+                <p>
+                    The selection of hot pot ingredients covers a wide range, with hundreds of dishes developed,
+                    including edible items in the food kingdom. The dishes have expanded to include poultry,
+                    aquatic products, seafood, game, animal organs, various vegetables, and dried and fresh
+                    mushrooms and fruits
+                </p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p>You are free to explore the food tour , if you have any advice or doubts,</p>
+            <p>please contact us at:</p>
+            <p><em>emile:<a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a></em></p>
+            <p><em>telephone:<a href="tel:(304) 555-7120">(304) 555-7120</a></em></p>
+        </div>
+    </article>
+
+
+</section>
+
+<footer>
+    welcome to my food tour &nbsp;&nbsp;&nbsp;&nbsp;contact :&nbsp;
+    <a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a>
+</footer>
+<script type="text/javascript">
+    document.querySelectorAll('a').forEach(function(el){
+         el.addEventListener('click', function(){
+             var dHeight = document.documentElement.clientHeight;
+             var target = document.querySelector('div[data-tab=' + this.getAttribute('data-tab')+ ']' )
+             target.height = dHeight - 90 + "px";
+             target.scrollIntoView({behavior:"smooth",block:"start",inline:"nearest" });
+         })
+     })
+</script>

@@ -1,0 +1,84 @@
+﻿@*@model IEnumerable<assignment2.Models.local_dishes>*@
+@model assignment2.View_Models.DishesIndexViewModel
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage4.cshtml";
+}
+
+<h1>Details</h1>
+
+<h3>
+    @(String.IsNullOrWhiteSpace (Model.Search)?"Showing all" : "You search for " +Model.Search +"found")
+    @Model.Local_dishes.TotalItemCount dishes
+</h3>
+<p>
+    @Html.ActionLink("Create New", "Create")
+    <div class="Filter">
+        @using (Html.BeginForm("Index", "local_dishes", FormMethod.Get))
+        {
+            <label>Filter by category:</label>
+            @Html.DropDownListFor(vm => vm.Cuisine, Model.CuiFilterItems, "All");
+            <input type="Submit" value="Filter" />
+            <input type="hidden" name="Search" id="Search" value="@Model.Search" />
+        }
+    </div>
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cuisine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Local_dishes.First().name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Local_dishes.First().local)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Local_dishes)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cuisines.type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.local)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>
+<div class=" page">
+    Page @(Model.Local_dishes.PageCount<Model.Local_dishes.PageNumber ? 0: Model.Local_dishes.PageNumber) of @Model.Local_dishes.PageCount
+    <div class="count">
+    @Html.PagedListPager(Model.Local_dishes,page => Url.Action("Index", new {cuisine = Model.Cuisine,Search =Model.Search,page })) 
+   </div>
+</div>
+<style>
+    .Filter{
+        margin-left:10px;
+        margin-top:30px;
+    }
+    .page{
+        margin-left:10px;
+    }
+    p{
+        color:black;
+    }
+    h3{
+        padding-top:10px;
+        margin-left:10px;
+    }
+</style>

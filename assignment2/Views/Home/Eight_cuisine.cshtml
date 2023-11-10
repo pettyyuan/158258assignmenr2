@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "Eight cuisines";
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+<header class="menu">
+    <ul>
+        <li><b>Food Tour in China </b></li>
+        <li><a href="~/Home/Index">Home</a></li>
+        <li><a class="active" href="~/Home/Eight_cuisine">Eight major Chinese cuisines</a></li>
+        <li><a href="~/Home/local_special_dishes">Local specialty dishes</a></li>
+        <li><a href="~/local_dishes/Index">Details</a></li>
+        <li><a href="~/Cuisines/Index">Cuisines</a></li>
+    </ul>
+</header>
+<section>
+    <nav class="navigation">
+        <ul>
+            <li><a href="~/Home/Index">Home</a></li>
+            <li><a href="~/Home/Eight_cuisine">Eight major Chinese cuisines</a></li>
+            <div class="groupID">
+            <li><a href="javascript:;" data-tab="Lu">Lu</a></li>
+            <li><a href="javascript:;" data-tab="Sichuan">Sichuan</a></li>
+            <li><a href="javascript:;" data-tab="Guangdong">Guangdong</a></li>
+            <li><a href="javascript:;" data-tab="Fujian">Fujian</a></li>
+            <li><a href="javascript:;" data-tab="Jiangsu">Jiangsu</a></li>
+            <li><a href="javascript:;" data-tab="Zhejiang">Zhejiang</a></li>
+            <li><a href="javascript:;" data-tab="Anhui">Anhui</a></li>
+            <li><a href="javascript:;" data-tab="Hunan">Hunan</a></li>
+            </div>
+            <li><a href="~/Home/local_special_dishes">Local specialty dishes</a></li>
+            <li><a href="~/local_dishes/Index">Details</a></li>
+            <li><a href="~/Cuisines/Index">Cuisines</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <div class="first">
+            <img src="~/Content/images/2-first.png" alt="CHinese food">
+            <div style="position:absolute;width: 50%;
+                z-index:5; left:300px; top:250px;
+                color:chocolate;font-size: 100px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Eight major Chinese cuisines</div>
+        </div>
+        <div class="Lu" data-tab="Lu">
+            <div class="text">
+                <h1>Shandong cuisine</h1>
+                <p>This cuisine have listed feature:</p>
+                <ul>
+                    <li>Good texture of raw materials</li>
+                    <li>Flavoring should be salty and pure</li>
+                    <li>Highlight the cooking method for blasting, grilled, wire</li>
+                    <li>take soup clear fresh</li>
+                    <li>The cooking of seafood and small seafood is unique</li>
+                    <li>Pay ostentation and eating etiquette</li>
+                </ul>
+            </div>
+            <img src="~/Content/images/Lu.png" alt="Lu">
+        </div>
+        <div class="Sichuan" data-tab="Sichuan">
+            <img src="~/Content/images/Sichuan.png" alt="Lu">
+            <div class="text">
+                <h1>SiChuan cuisine</h1>
+                <p>Sichuan cuisine has hemp, spicy, sweet, salty, sour and bitter</p>
+                <p>The flavor of Sichuan cuisine is quite rich, known as hundreds of dishes</p>
+                <p>
+                    Highlight hemp, spicy, fragrant, fresh, oil, thick taste, reuse "three pepper" (pepper,
+                    pepper, pepper) and fresh ginger
+                </p>
+                <p>
+                    The dishes are composed of four parts: senior banquet dishes, ordinary banquet dishes, public
+                    dining dishes and home-style dishes
+                </p>
+
+            </div>
+        </div>
+        <div class="Guangdong" data-tab="Guangdong">
+            <div class="text">
+                <h1>Guangdong cuisine</h1>
+                <p>
+                    Guangdong cuisine pays attention to the quality and taste, the taste is relatively
+                    light, and strive to clear in the fresh, light in the beauty. And with the change
+                    of season, summer and autumn heavy light, winter and spring heavy rich, the
+                    pursuit of color, fragrance, taste, type.
+                </p>
+            </div>
+            <img src="~/Content/images/Guangdong.png" alt="Guangdong">
+        </div>
+        <div class="Fujian" data-tab="Fujian">
+            <img src="~/Content/images/Fujian.png" alt="Fujian">
+            <div class="text">
+                <h1>Fujian cuisine</h1>
+                <p>
+                    Fujian cuisine is one of the eight major cuisines in China, formed through a mixture of
+                    Han culture in the Central Plains and Min Yue culture
+                </p>
+                <p>
+                    The cooking characteristics of Fujian cuisine are clear soup, light taste, and crispy
+                    fried food. They are good at cooking seafood dishes. Its cooking techniques are
+                    characterized by steaming, frying, frying, braising, frying, and stewing
+                </p>
+            </div>
+        </div>
+        <div class="Jiangsu" data-tab="Jiangsu">
+            <div class="text">
+                <h1>Jiangsu cuisine</h1>
+                <p>
+                    Jiangsu cuisine consists of Jinling cuisine, Huaiyang Cuisine, Suzhou tin cuisine and
+                    Xuhai cuisine. Its taste is fresh, salty and slightly sweet, and it is accustomed to the
+                    five spices. It emphasizes the original flavor and enjoys a high reputation both
+                    domestically and internationally
+                </p>
+                <p>
+                    Jiangsu has a wide range of ingredients, mainly fresh from rivers, lakes, and seawater;
+                    Fine knife craftsmanship, diverse cooking methods, adept at stewing and stewing; Pursuing
+                    authentic flavor, fresh and peaceful, with strong adaptability
+                </p>
+            </div>
+            <img src="~/Content/images/Jiangsu.png" alt="Jiangsu">
+        </div>
+        <div class="Zhejiang" data-tab="Zhejiang">
+            <img src="~/Content/images/Zhejiang.png" alt="Zhejiang">
+            <div class="text">
+                <h1>Zhejiang  cuisine</h1>
+                <p>
+                    The raw materials pay attention to the variety and season, in order to fully reflect the
+                    soft and crispy texture of the raw materials. The seafood, fruits and vegetables used
+                    are all based on season, and the poultry and livestock used are mostly specialty products.
+                    This fully reflects the Zhejiang cuisine's emphasis on freshness and parts, and follows
+                    the principle of "four season sequence" in material selection
+                </p>
+            </div>
+        </div>
+        <div class="Anhui" data-tab="Anhui">
+            <div class="text">
+                <h1>Anhui cuisine</h1>
+                <p>
+                    Anhui Cuisine cuisine has rich cultural heritage and is one of the eight famous cuisines in China.
+                    Its main flavor characteristics are mainly salty and fresh, highlighting the original flavor,
+                    emphasizing fire power, and emphasizing dietary supplements.
+                </p>
+                <p>
+                    In terms of cooking methods, the main techniques are burning,
+                    stewing, braising, steaming, and smoking. The main dishes include banquet
+                    dishes, five Gui eight plate ten big bowls, nine bowls six, eight bowls twelve
+                    plates, six big pots, and popular dishes. The main famous banquets include Bagongshan
+                    tofu Banquet, Baogong Banquet, Hongwu Banquet, etc.
+                </p>
+            </div>
+            <img src="~/Content/images/Anhui.png" alt="Anhui">
+        </div>
+        <div class="Hunan" data-tab="Hunan">
+            <img src="~/Content/images/Hunan.png" alt="Hunan">
+            <div class="text">
+                <h1>Hunan  cuisine</h1>
+                <p>
+                    Hunan cuisine is finely crafted with a wide range of ingredients, diverse flavors,
+                    and diverse varieties; The color is oily and rich, emphasizing practicality; Pay attention
+                    to spiciness, freshness, and softness in taste;In terms of production methods, it
+                    is known as simmering, stewing, waxing, steaming, and frying
+                </p>
+            </div>
+        </div>
+        <div class="contact">
+            <p>You are free to explore the food tour , if you have any advice or doubts,</p>
+            <p>please contact us at:</p>
+            <p><em>emile:<a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a></em></p>
+            <p><em>telephone:<a href="tel:(304) 555-7120">(304) 555-7120</a></em></p>
+        </div>
+    </article>
+
+
+</section>
+
+<footer>
+    welcome to my food tour &nbsp;&nbsp;&nbsp;&nbsp;contact :&nbsp;
+    <a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a>
+</footer>
+<script type="text/javascript">
+    document.querySelectorAll('a').forEach(function(el){
+         el.addEventListener('click', function(){
+             var dHeight = document.documentElement.clientHeight;
+             var target = document.querySelector('div[data-tab=' + this.getAttribute('data-tab')+ ']' )
+             target.height = dHeight - 70 + "px";
+             target.scrollIntoView({behavior:"smooth"});
+         })
+     })
+</script>

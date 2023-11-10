@@ -1,0 +1,61 @@
+﻿@model assignment2.Models.Cuisines
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage5.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Cuisines</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<style>
+    h4 {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .dl-horizontal dt {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .dl-horizontal dd {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-actions {
+        text-align: center;
+        font-size: 20px;
+    }
+</style>

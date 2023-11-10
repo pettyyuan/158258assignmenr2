@@ -1,0 +1,505 @@
+@charset "utf-8";
+@font-face {
+    font-family:'CAC_champagne' ;
+    src: url('cac_champagne.ttf');
+ }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    background-color: white;
+}
+
+/* Style the header */
+
+img {
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+/* Container for flexboxes */
+section {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 2px;
+    padding: 3px;
+    overflow: hidden;
+    background-color: #333;
+    margin-top:0px;
+    position: fixed;
+    z-index:10;
+    width: 100%;
+}
+
+.menu li {
+    float:left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+}
+
+.menu li b {
+    font-size: 30px;
+    font-weight:bold;
+    font-family: CAC_champagne;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.menu a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color:#4caf50;
+}
+
+/* Style the navigation menu */
+
+    /* Style the list inside the menu */
+    .navigation>ul {
+        list-style-type: none;
+        margin-top: 60px;
+        margin-left: 0;
+        padding: 0;
+        width:15% ;
+        background-color:white;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .navigation li a {
+        display: block;
+        color: green;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        padding-left:8% ;
+        font-weight:700;
+        text-decoration: none;
+    }
+    .navigation .groupID li a {
+        display: block;
+        color: green;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left:15% ;
+        font-weight:500;
+        text-decoration: none;
+    }
+
+        .navigation li a.active {
+            background-color: #46FEF6;
+            color: black;
+        }
+
+        .navigation li a:hover:not(.active) {
+            background-color: #669CFC;
+            color: white;
+        }
+        .navigation li b.active {
+            background-color: #46FEF6;
+            color: black;
+        }
+
+        .navigation li b:hover:not(.active) {
+            background-color: #669CFC;
+            color: white;
+        }
+
+/* Style the content */
+article {
+    display: block;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    margin-top:0px;
+    margin-left: 15%;
+    background-color:gainsboro;
+}
+.first {
+    display: block;
+    padding-top: 48px;
+    
+}
+.Lu{
+    padding-top: 40px;
+}
+.Lu .text {
+    padding-top: 20px;
+    display: block;
+    width: 50%;
+    float: left;
+    border-radius:30px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin: 20px 20px;
+}
+.Lu .text h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    height: 30px;
+}
+.Lu .text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+}
+.Lu .text>ul>li{
+    list-style-type: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 4em;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 5px;
+}
+.Lu>img{
+    margin: 30px 10px;
+    width: 40%;
+}
+.Sichuan{
+    display: block;
+    padding-top: 40px;
+}
+.Sichuan>img{
+    margin-top: 30px ;
+    margin-bottom: 10px;
+    width: 46%;
+   
+}
+.Sichuan .text {
+    display: block;
+    width: 50%;
+    float:right;
+    border-radius:30px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin: 30px 15px;
+    padding-bottom: 40px;
+}
+.Sichuan .text h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    height: 30px;
+}
+.Sichuan .text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 10px;
+}
+.Guangdong{
+    padding-top: 40px;
+}
+.Guangdong .text {
+    display: block;
+    width: 50%;
+    float: left;
+    border-radius:30px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin: 10px 20px;
+   
+}
+.Guangdong .text h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    height: 30px;
+}
+.Guangdong .text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 10px;
+}
+.Guangdong>img{
+    margin: 30px 10px;
+    width: 40%;
+}
+.Fujian{
+    display: block;
+    padding-top: 40px;
+}
+.Fujian>img{
+    margin-top: 10px ;
+    margin-bottom: 50px;
+    width: 46%;
+   
+}
+.Fujian .text {
+    display: block;
+    width: 50%;
+    float:right;
+    border-radius:30px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin: 30px 15px;
+    padding-bottom: 40px;
+}
+.Fujian .text h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    height: 30px;
+}
+.Fujian .text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 10px;
+}
+.Jiangsu{
+    padding-top: 40px;
+}
+.Jiangsu .text {
+    display: block;
+    width: 50%;
+    float: left;
+    border-radius:30px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin: 40px 20px;
+    padding-bottom: 40px;
+}
+.Jiangsu .text h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    height: 30px;
+}
+.Jiangsu .text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 10px;
+}
+.Jiangsu .text>ul>li{
+    list-style-type: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 4em;
+    font-size: 23px;
+    line-height: 30px;
+}
+.Jiangsu>img{
+    margin: 30px 10px;
+    width: 45%;
+}
+.Zhejiang{
+    display: block;
+    padding-top: 40px;
+}
+.Zhejiang img{
+    margin-top: 30px ;
+    margin-bottom: 50px;
+    width: 47%;
+   
+}
+.Zhejiang .text {
+    display: block;
+    width: 50%;
+    float:right;
+    border-radius:30px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin: 30px 15px;
+    padding-bottom: 40px;
+}
+.Zhejiang .text h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    height: 30px;
+}
+.Zhejiang .text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 10px;
+}
+.Anhui{
+    padding-top: 40px;
+}
+.Anhui .text {
+    display: block;
+    width: 50%;
+    float: left;
+    border-radius:30px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin: 20px 20px;
+    padding-bottom: 40px;
+}
+.Anhui .text h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    height: 30px;
+}
+.Anhui .text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 10px;
+}
+.Anhui>img{
+    margin: 30px 10px;
+    width: 45%;
+}
+.Hunan{
+    display: block;
+    padding-top: 40px;
+}
+.Hunan img{
+    margin-top: 30px ;
+    margin-bottom: 50px;
+    width: 47%;
+   
+}
+.Hunan .text {
+    display: block;
+    width: 50%;
+    float:right;
+    border-radius:30px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin: 30px 15px;
+    padding-bottom: 40px;
+}
+.Hunan .text h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    height: 30px;
+}
+.Hunan .text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 10px;
+}
+article>h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px ;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+}
+article>h2{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:40px ;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:green;
+}
+article>p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    text-indent: 2em;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.contact {
+    display: block;
+    padding: 40px;
+    background-color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 2em;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 30px;
+    border-style:dashed;
+    border-color: aquamarine ;
+}
+
+article div p a{
+    text-decoration: none;
+    overflow: hidden;
+    color:green;
+}
+article div p a:hover{
+    color:yellow;
+}
+footer{
+    margin-left: 15%;
+    text-align: center;
+    color:white;
+    background-color: black;
+}
+footer>a{
+
+    text-decoration: none;
+    overflow: hidden;
+    color:green;
+}
+footer>a:hover{
+   
+    color:yellow;
+}

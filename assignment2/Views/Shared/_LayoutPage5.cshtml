@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/Details.css" />
+</head>
+<body>
+    <header class="menu">
+        <ul>
+            <li><b>Food Tour in China </b></li>
+            <li><a href="~/Home/Index">Home</a></li>
+            <li><a href="~/Home/Eight_cuisine">Eight major Chinese cuisines</a></li>
+            <li><a href="~/Home/local_special_dishes">Local specialty dishes</a></li>
+            <li><a href="~/local_dishes/Index">Details</a></li>
+            <li><a class="active" href="~/Cuisines/Index">Cuisines</a></li>
+           
+        </ul>
+        
+    </header>
+    <section>
+        <nav class="navigation">
+            <ul>
+                <li><a href="~/Home/Index">Home</a></li>
+                <li><a href="~/Home/Eight_cuisine">Eight major Chinese cuisines</a></li>
+                <li><a href="~/Home/local_special_dishes">Local specialty dishes</a></li>
+                <li><a href="~/local_dishes/Index">Details</a></li>
+                <li><a href="~/Cuisines/Index">Cuisines</a></li>
+            </ul>
+        </nav>
+        <article>
+
+            @RenderBody()
+            <div class="contact">
+                <p>You are free to explore the food tour , if you have any advice or doubts,</p>
+                <p>please contact us at:</p>
+                <p><em>emile:<a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a></em></p>
+                <p><em>telephone:<a href="tel:(304) 555-7120">(304) 555-7120</a></em></p>
+            </div>
+        </article>
+        <footer>
+            welcome to my food tour &nbsp;&nbsp;&nbsp;&nbsp;contact :&nbsp;
+            <a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a>
+        </footer>
+    </section>
+    @Scripts.Render("~/ bundles / jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
